@@ -1,0 +1,29 @@
+# 修飾キー
+escape ^Tt 
+
+# スタートメッセージを表示させない
+startup_message off
+
+# 端末が突然終了する場合、自動的に端末を中断状態にする
+autodetach on
+
+# 最終行にウィンドウ一覧を表示
+hardstatus alwayslastline "%w"
+
+# 最終行に時刻を表示
+hardstatus alwayslastline "[%02c] %`%-w%{=b bw}%n %t%{-}%+w"
+
+# スクロールバッファを可能にする
+termcapinfo xterm*  ti@:te@te
+
+shell $SHELL
+
+# キーバインド
+bind l windowlist
+bind t title
+
+screen 0
+screen 1
+screen 2
+screen 3
+select 0
